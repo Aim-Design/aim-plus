@@ -1,0 +1,4 @@
+**.d.ts
+/packages/aim
+dist
+node_modules
