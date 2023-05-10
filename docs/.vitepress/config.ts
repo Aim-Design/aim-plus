@@ -1,13 +1,14 @@
 import { defineConfig } from 'vitepress';
 import { mdPlugin } from './config/plugins';
 import { getNav } from './config/nav';
+
 const isProd = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   title: 'AimPlus',
   description: '一个Vue3组件库',
   lang: 'cn-ZH',
-  base: '/aim-plus/',
+  base: isProd ? '/aim-plus/' : '/',
   lastUpdated: true,
   head: [
     [

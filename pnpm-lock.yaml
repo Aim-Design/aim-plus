@@ -129,10 +129,7 @@ importers:
     specifiers: {}
 
   packages/components:
-    specifiers:
-      '@aim-plus/utils': workspace:^1.0.0
-    dependencies:
-      '@aim-plus/utils': link:../utils
+    specifiers: {}
 
   packages/utils:
     specifiers: {}
