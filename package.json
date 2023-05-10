@@ -10,7 +10,6 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "docs:site": "vitepress dev site",
-    "prepare": "husky install",
     "build:aim": "gulp -f script/build/index.ts",
     "publish:aim": "gulp -f script/publish/index.ts"
   },
