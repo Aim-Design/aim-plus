@@ -32,4 +32,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
           branch: gh-pages # 部署后提交到那个分支
-          folder: packages/docs/.vitepress/dist # 这里填打包好的目录名称
+          folder: docs/.vitepress/dist # 这里填打包好的目录名称
