@@ -1,4 +1,4 @@
-# site.yaml
+# ci.yml
 name: site
 on:
   push:
