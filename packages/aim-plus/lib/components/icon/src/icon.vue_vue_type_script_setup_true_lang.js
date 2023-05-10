@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("vue"),t={style:{color:"brown"}},o=e.defineComponent({name:"AimIcon"}),n=e.defineComponent({...o,setup(c){return(r,u)=>(e.openBlock(),e.createElementBlock("div",t,"111"))}});exports.default=n;

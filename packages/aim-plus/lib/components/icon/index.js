@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./src/icon.vue_vue_type_script_setup_true_lang.js");e.default.install=u=>{u.component(e.default.name,e.default)};const t=e.default;exports.AimIcon=t;exports.default=t;

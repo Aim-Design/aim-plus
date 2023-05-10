@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});function o(n){const t=`aim-${n}`;return{n:e=>e?e.startsWith("--")?`${t}${e}`:`${t}__${e}`:t,classes:(...e)=>e.map(r=>{if(Array.isArray(r)){const[a,c,s=null]=r;return a?c:s}return r})}}exports.createNamespace=o;

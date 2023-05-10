@@ -1,0 +1,129 @@
+/**
+
+声明变量
+@width: 10px;
+
+
+在属性值中使用变量
+#header {
+    width:@width;
+}
+
+a {
+    color:blue;
+    &:hover {        //等同于 a:hover
+        color:green;
+    }
+
+    & + & {  // a + a
+        color:white;
+    }
+
+    &-children {  // a-children
+        color:black;
+    }
+}
+
+
+*/
+:root {
+  --aim-color-white: #ffffff;
+  --aim-color-black: #000000;
+  --aim-bg-color: var(--aim-color-white);
+  --aim-padding-base: 4px;
+  --aim-padding-small: 12px;
+  --aim-padding-middle: 16px;
+  --aim-padding-large: 24px;
+  --aim-line-height-small: 18px;
+  --aim-line-height-middle: 20px;
+  --aim-line-height-large: 22px;
+  --aim-border-color: #ebedf0;
+  --aim-border-width: 1px;
+  --aim-border-style: solid;
+  --aim-border: var(--aim-border-width) solid var(--aim-border-color);
+  --aim-radius-base: 4px;
+  --aim-radius-small: 2px;
+  --aim-radius-middle: 4px;
+  --aim-radius-large: 8px;
+  --aim-radius-round: 20px;
+  --aim-radius-max: 999px;
+  --aim-active-opacity: 0.6;
+  --aim-disabled-opacity: 0.5;
+  --aim-overlay-color-lighter: rgba(0, 0, 0, 0.5);
+  --aim-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.04),
+    0px 8px 20px rgba(0, 0, 0, 0.08);
+  --aim-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.12);
+  --aim-font-line-height-primary: 24px;
+  --aim-transition-duration: 0.3s;
+  /**
+/** 定义需要遍历的对象 each 遍历对象循环赋值
+// @marAndPadAndFontList: {
+//   4: 4px;
+//   5: 5px;
+//   8: 8px;
+//   10: 10px;
+//   12: 12px;
+// }
+
+// each(@marAndPadAndFontList, {
+//   .fs-@{key} {
+//       font-size: @value;
+//   }
+// });
+// <div class="fs-12"></div>
+// <div class="fs-14"></div>
+
+*/
+  --aim-font-size-mini: 10px;
+  --aim-font-size-small: 12px;
+  --aim-font-size-middle: 14px;
+  --aim-font-size-large: 16px;
+  --aim-text-color-primary: #303133;
+  --aim-text-color-regular: #606266;
+  --aim-text-color-secondary: #909399;
+  --aim-text-color-placeholder: #a8abb2;
+  --aim-text-color-disabled: #c0c4cc;
+  --aim-disabled-bg-color: #f5f7fa;
+  --aim-disabled-text-color: #a8abb2;
+  --aim-disabled-border-color: #e4e7ed;
+  --aim-icon-size-mini: 16px;
+  --aim-icon-size-small: 18px;
+  --aim-icon-size-middle: 20px;
+  --aim-icon-size-large: 22px;
+  --aim-color-default: #1f2937;
+  --aim-color-default-3: #626973;
+  --aim-color-default-5: #8f949b;
+  --aim-color-default-7: #bcbfc3;
+  --aim-color-default-8: #d2d4d7;
+  --aim-color-default-9: #e9eaeb;
+  --aim-color-primary: #3b82f6;
+  --aim-color-primary-3: #76a8f9;
+  --aim-color-primary-5: #9dc1fb;
+  --aim-color-primary-7: #c4dafc;
+  --aim-color-primary-8: #d8e6fd;
+  --aim-color-primary-9: #ebf3fe;
+  --aim-color-info: #6b7280;
+  --aim-color-info-3: #979ca6;
+  --aim-color-info-5: #b5b9c0;
+  --aim-color-info-7: #d3d5d9;
+  --aim-color-info-8: #e1e3e6;
+  --aim-color-info-9: #f0f1f2;
+  --aim-color-success: #14b8a6;
+  --aim-color-success-3: #5bcdc1;
+  --aim-color-success-5: #8adcd3;
+  --aim-color-success-7: #b9eae4;
+  --aim-color-success-8: #d0f1ed;
+  --aim-color-success-9: #e8f8f6;
+  --aim-color-warning: #eab308;
+  --aim-color-warning-3: #f0ca52;
+  --aim-color-warning-5: #f5d984;
+  --aim-color-warning-7: #f9e8b5;
+  --aim-color-warning-8: #fbf0ce;
+  --aim-color-warning-9: #fdf7e6;
+  --aim-color-danger: #ef4444;
+  --aim-color-danger-3: #f47c7c;
+  --aim-color-danger-5: #f7a2a2;
+  --aim-color-danger-7: #fac7c7;
+  --aim-color-danger-8: #fcdada;
+  --aim-color-danger-9: #fdecec;
+}

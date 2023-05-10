@@ -5,5 +5,5 @@ cache
 .history/
 .pnpm-debug.log
 # packages/aim-plus
-esm
-lib
+# esm
+# lib

@@ -1,0 +1,28 @@
+/**
+
+声明变量
+@width: 10px;
+
+
+在属性值中使用变量
+#header {
+    width:@width;
+}
+
+a {
+    color:blue;
+    &:hover {        //等同于 a:hover
+        color:green;
+    }
+
+    & + & {  // a + a
+        color:white;
+    }
+
+    &-children {  // a-children
+        color:black;
+    }
+}
+
+
+*/
