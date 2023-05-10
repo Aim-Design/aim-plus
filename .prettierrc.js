@@ -5,5 +5,6 @@ module.exports = {
   singleQuote: true, // 字符串是否使用单引号，默认为 false，使用双引号
   semi: true, // 行尾是否使用分号，默认为true
   trailingComma: 'none', // 是否使用尾逗号
-  bracketSpacing: true // 对象大括号直接是否有空格，默认为 true，效果：{ a: 1 }
+  bracketSpacing: true, // 对象大括号直接是否有空格，默认为 true，效果：{ a: 1 }
+  endOfLine: 'auto' //避免报错delete (cr)的错
 };

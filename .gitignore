@@ -1,5 +1,9 @@
 node_modules
-lib
 .idea
 .vscode
+cache
 .history/
+.pnpm-debug.log
+# packages/aim-plus
+esm
+lib

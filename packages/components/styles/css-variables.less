@@ -1,0 +1,84 @@
+@import './var.less';
+
+:root {
+  --aim-color-white: #ffffff;
+  --aim-color-black: #000000;
+  --aim-bg-color: var(--aim-color-white);
+  // Padding
+  --aim-padding-base: 4px;
+  --aim-padding-small: 12px;
+  --aim-padding-middle: 16px;
+  --aim-padding-large: 24px;
+  --aim-line-height-small: 18px;
+  --aim-line-height-middle: 20px;
+  --aim-line-height-large: 22px;
+
+  // Border
+  --aim-border-color: #ebedf0;
+  --aim-border-width: 1px;
+  --aim-border-style: solid;
+  --aim-border: var(--aim-border-width) solid var(--aim-border-color);
+  --aim-radius-base: 4px;
+  --aim-radius-small: 2px;
+  --aim-radius-middle: 4px;
+  --aim-radius-large: 8px;
+  --aim-radius-round: 20px;
+  --aim-radius-max: 999px;
+
+  --aim-active-opacity: 0.6;
+  --aim-disabled-opacity: 0.5;
+  --aim-overlay-color-lighter: rgba(0, 0, 0, 0.5);
+  --aim-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.04),
+    0px 8px 20px rgba(0, 0, 0, 0.08);
+  --aim-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.12);
+  --aim-font-line-height-primary: 24px;
+  --aim-transition-duration: 0.3s;
+
+  /**
+/** 定义需要遍历的对象 each 遍历对象循环赋值
+// @marAndPadAndFontList: {
+//   4: 4px;
+//   5: 5px;
+//   8: 8px;
+//   10: 10px;
+//   12: 12px;
+// }
+
+// each(@marAndPadAndFontList, {
+//   .fs-@{key} {
+//       font-size: @value;
+//   }
+// });
+// <div class="fs-12"></div>
+// <div class="fs-14"></div>
+
+*/
+
+  // Font
+  each(@fontSizes, {
+    --aim-font-size-@{key}: @value;
+  });
+
+  each(@fontColors, {
+  --aim-text-color-@{key}: @value;
+});
+
+  each(@disabledColors, {
+  --aim-disabled-@{key}-color: @value;
+});
+
+  each(@iconSizes, {
+  --aim-icon-size-@{key}: @value;
+});
+
+  @a: 3, 5, 7, 8, 9;
+
+  each(@colors, {
+  --aim-color-@{key}: @value;
+  --aim-color-@{key}-3: tint(@value, 30%);
+  --aim-color-@{key}-5: tint(@value, 50%);
+  --aim-color-@{key}-7: tint(@value, 70%);
+  --aim-color-@{key}-8: tint(@value, 80%);
+  --aim-color-@{key}-9: tint(@value, 90%);
+});
+}

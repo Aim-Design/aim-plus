@@ -1,4 +1,4 @@
 packages:
-    - packages/**
-    - play
-    - website
+  - packages/**
+  - examples
+  - docs

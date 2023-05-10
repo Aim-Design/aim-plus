@@ -13,7 +13,8 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   globals: {
-    defineOptions: true
+    // defineOptions: true,
+    defineOptions: 'writable'
   },
   parser: 'vue-eslint-parser',
   parserOptions: {

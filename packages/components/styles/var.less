@@ -1,0 +1,86 @@
+@types: default, primary, info, success, warning, danger;
+
+/**
+
+声明变量
+@width: 10px;
+
+
+在属性值中使用变量
+#header {
+    width:@width;
+}
+
+a {
+    color:blue;
+    &:hover {        //等同于 a:hover
+        color:green;
+    }
+
+    & + & {  // a + a
+        color:white;
+    }
+
+    &-children {  // a-children
+        color:black;
+    }
+}
+
+
+*/
+
+// 类型颜色
+@colors: {
+  default: #1f2937;
+  primary: #3b82f6;
+  info: #6b7280;
+  success: #14b8a6;
+  warning: #eab308;
+  danger: #ef4444;
+};
+
+// 文字颜色
+@fontColors: {
+  primary: #303133;
+  regular: #606266;
+  secondary: #909399;
+  placeholder: #a8abb2;
+  disabled: #c0c4cc;
+};
+
+// 禁用颜色
+@disabledColors: {
+  bg: #f5f7fa;
+  text: #a8abb2;
+  border: #e4e7ed;
+};
+
+// 文字大小
+@fontSizes: {
+  mini: 10px;
+  small: 12px;
+  middle: 14px;
+  large: 16px;
+};
+
+@paddingSizes: {
+  base: 4px;
+  mini: 10px;
+  small: 12px;
+  middle: 16px;
+  large: 24px;
+};
+
+// 文字大小
+@iconSizes: {
+  mini: 16px;
+  small: 18px;
+  middle: 20px;
+  large: 22px;
+};
+
+@buttonSizes: {
+  small: 24px;
+  middle: 32px;
+  large: 40px;
+};

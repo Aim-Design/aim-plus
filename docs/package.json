@@ -1,0 +1,24 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fast-glob": "^3.2.11",
+    "sass": "^1.54.5",
+    "vitepress-theme-demoblock": "^1.4.2"
+  },
+  "dependencies": {
+    "aim-plus": "workspace:^1.0.2",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "prism-theme-vars": "^0.2.4",
+    "prismjs": "^1.28.0"
+  }
+}
