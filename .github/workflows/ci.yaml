@@ -1,5 +1,5 @@
 # ci.yml
-name: site
+name: Aim
 on:
   push:
     branches:
