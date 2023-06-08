@@ -4,7 +4,13 @@ title: Button 按钮
 
 # Button 按钮
 
-常用的操作按钮。
+```shell
+import { createApp } from 'vue';
+import { AimButton } from 'vangle';
+
+const app = createApp();
+app.use(AimButton);
+```
 
 ## 基础用法
 
@@ -30,7 +36,7 @@ button/text
 
 :::
 
-## Button Attributes
+## 属性
 
 | Attribute | Description  | Type    | Accepted Values                                              | Default |
 | --------- | ------------ | ------- | ------------------------------------------------------------ | ------- |
@@ -40,7 +46,7 @@ button/text
 | text      | 文字按钮     | boolean | —                                                            | false   |
 | disabled  | 禁用按钮     | boolean | —                                                            | false   |
 
-### Button 插槽
+## 插槽
 
 | 插槽名  | 说明           |
 | ------- | -------------- |

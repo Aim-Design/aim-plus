@@ -3,6 +3,7 @@
     <nav>
       <ul>
         <li><router-link to="/button">Button</router-link></li>
+        <li><router-link to="/icon">Icon</router-link></li>
       </ul>
     </nav>
     <router-view></router-view>
