@@ -88,3 +88,8 @@ import App from './App.vue';
 
 createApp(App).use(AimButton).mount('#app');
 ```
+
+## 贡献者
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
