@@ -4,14 +4,6 @@ title: Button 按钮
 
 # Button 按钮
 
-```shell
-import { createApp } from 'vue';
-import { AimButton } from 'aim-plus';
-
-const app = createApp();
-app.use(AimButton);
-```
-
 ## 基础用法
 
 :::demo 使用 `type`、`size`、`round` 来定义按钮的样式。

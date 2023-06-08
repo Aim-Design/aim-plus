@@ -4,15 +4,7 @@ title: Icon 图标
 
 # Icon 图标
 
-图标库资源 [Bootstrap Icons](https://github.com/twbs/icons/releases/tag/v1.10.5)
-
-```shell
-import { createApp } from 'vue';
-import { AimIcon } from 'aim-plus';
-
-const app = createApp();
-app.use(AimIcon);
-```
+图标库资源来自于 [Bootstrap Icons](https://github.com/twbs/icons/releases/tag/v1.10.5)。
 
 ## 基础用法
 

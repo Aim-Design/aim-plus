@@ -47,23 +47,23 @@ export default defineConfig({
       ],
       '/components': [
         {
-          text: '常用组件',
+          text: '基础组件',
           items: [
             { text: 'Button 按钮', link: '/components/button/index.md' },
             { text: 'Icon 图标', link: '/components/icon/index.md' }
           ]
+        },
+        {
+          text: '表单组件',
+          items: [
+            // {
+            //   text: '条件查询组件',
+            //   link: '/components/TQueryCondition/base.md'
+            // },
+            // { text: '表单组件', link: '/components/TForm/base.md' },
+            // { text: 'table组件', link: '/components/TTable/base.md' }
+          ]
         }
-        // {
-        //   text: '复杂组件',
-        //   items: [
-        //     {
-        //       text: '条件查询组件',
-        //       link: '/components/TQueryCondition/base.md'
-        //     },
-        //     { text: '表单组件', link: '/components/TForm/base.md' },
-        //     { text: 'table组件', link: '/components/TTable/base.md' }
-        //   ]
-        // }
       ]
     }
   },
