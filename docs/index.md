@@ -15,10 +15,10 @@ hero:
   actions:
     - theme: brand
       text: 安装指南
-      link: /components/
+      link: /guild/installation
     - theme: brand
       text: 组件预览
-      # link: /components/TSelect/base.md
+      link: /components/button/index.md
 features:
   - icon: 🔨
     title: 实际项目

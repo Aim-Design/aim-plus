@@ -43,16 +43,16 @@ export default defineConfig({
               link: '/guild/quickstart'
             }
           ]
-        },
-        {
-          text: '进阶',
-          items: [
-            {
-              text: 'xx',
-              link: '/xx'
-            }
-          ]
         }
+        // {
+        //   text: '进阶',
+        //   items: [
+        //     {
+        //       text: 'xx',
+        //       link: '/xx'
+        //     }
+        //   ]
+        // }
       ],
       '/components': [
         {
