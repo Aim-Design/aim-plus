@@ -1,5 +1,5 @@
 <template>
-  <i :class="[n(), loading && 'is-loading']" :style="style">
+  <i :class="[n(), rotate && 'is-rotate']" :style="style">
     <use v-html="icon"></use>
     <slot />
   </i>
@@ -15,6 +15,8 @@ defineOptions({ name: 'AimIcon' });
 const { n } = createNamespace('icon');
 
 const props = defineProps(IconProps);
+console.log(props);
+
 const icon = computed(() => getIcon(props.name));
 const style = computed<CSSProperties>(() => {
   if (!props.size && !props.color) return {};

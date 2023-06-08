@@ -3910,7 +3910,7 @@ const bj = /* @__PURE__ */ Object.assign({
 }), jg_ = {
   name: String,
   color: String,
-  loading: Boolean,
+  rotate: Boolean,
   size: [String, Number]
 }, zg_ = (_) => _ ? bj[`./font/${_}.svg`] : "";
 export {

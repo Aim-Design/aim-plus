@@ -8,7 +8,7 @@
         <component :is="formatPathDemos[path]" v-if="formatPathDemos[path]" />
       </div>
 
-      <div class="van-divider"></div>
+      <div class="aim-divider"></div>
 
       <div class="op-btns">
         <VanTooltip content="复制代码" :show-arrow="false">
@@ -33,7 +33,7 @@
         </div>
       </VanCollapseTransition>
 
-      <Transition name="van-fade-in-linear">
+      <Transition name="aim-fade-in-linear">
         <div
           v-show="sourceVisible"
           class="example-float-control"
@@ -72,8 +72,6 @@ const formatPathDemos = computed(() => {
 const sourceVisible = ref(true);
 
 const decodedSource = computed(() => {
-  console.log(props);
-
   return decodeURIComponent(props.source);
 });
 const decodedDescription = computed(() =>
@@ -101,7 +99,7 @@ function handleCopy() {
   padding: 0.8rem;
   margin: 0.5px;
 
-  > .van-icon {
+  > .aim-icon {
     margin-right: 16px;
     font-size: 26px;
   }
@@ -160,7 +158,7 @@ function handleCopy() {
   }
 }
 
-.van-divider {
+.aim-divider {
   display: block;
   height: 1px;
   width: 100%;
@@ -168,13 +166,13 @@ function handleCopy() {
   border-top: 1px solid var(--border-color);
 }
 
-.van-fade-in-linear-enter-active,
-.van-fade-in-linear-leave-active {
+.aim-fade-in-linear-enter-active,
+.aim-fade-in-linear-leave-active {
   transition: all 0.3s;
 }
 
-.van-fade-in-linear-enter-from,
-.van-fade-in-linear-leave-to {
+.aim-fade-in-linear-enter-from,
+.aim-fade-in-linear-leave-to {
   opacity: 0;
 }
 </style>

@@ -7,7 +7,7 @@ export const svgs = import.meta.glob('./font/*.svg', {
 export const IconProps = {
   name: String,
   color: String,
-  loading: Boolean,
+  rotate: Boolean,
   size: [String, Number]
 };
 

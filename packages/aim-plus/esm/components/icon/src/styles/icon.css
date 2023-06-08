@@ -12,7 +12,7 @@
   font-size: inherit;
   font-style: normal;
 }
-.aim-icon.is-loading {
+.aim-icon.is-rotate {
   animation: rotating 2s linear infinite;
 }
 .aim-icon svg {

@@ -1,23 +1,25 @@
-import { defineComponent as r, computed as t, openBlock as m, createElementBlock as a, normalizeClass as p, unref as o, normalizeStyle as d, createElementVNode as f, renderSlot as u } from "vue";
+import { defineComponent as r, computed as n, openBlock as m, createElementBlock as a, normalizeClass as p, unref as o, normalizeStyle as f, createElementVNode as d, renderSlot as u } from "vue";
 import "./styles/icon.css";
 import { createNamespace as _ } from "../../../utils/components.mjs";
 import { isUndefined as z } from "../../../utils/types.mjs";
-import { addUnit as g } from "../../../utils/style.mjs";
-import { IconProps as y, getIcon as I } from "./icon.mjs";
-const S = ["innerHTML"], h = r({ name: "AimIcon" }), N = /* @__PURE__ */ r({
+import { addUnit as y } from "../../../utils/style.mjs";
+import { IconProps as I, getIcon as S } from "./icon.mjs";
+const g = ["innerHTML"], h = r({ name: "AimIcon" }), N = /* @__PURE__ */ r({
   ...h,
-  props: y,
-  setup(i) {
-    const e = i, { n: s } = _("icon"), c = t(() => I(e.name)), l = t(() => !e.size && !e.color ? {} : {
-      fontSize: z(e.size) ? void 0 : g(e.size),
+  props: I,
+  setup(s) {
+    const e = s, { n: i } = _("icon");
+    console.log(e);
+    const c = n(() => S(e.name)), l = n(() => !e.size && !e.color ? {} : {
+      fontSize: z(e.size) ? void 0 : y(e.size),
       "--color": e.color
     });
-    return (n, k) => (m(), a("i", {
-      class: p([o(s)(), n.loading && "is-loading"]),
-      style: d(o(l))
+    return (t, k) => (m(), a("i", {
+      class: p([o(i)(), t.rotate && "is-rotate"]),
+      style: f(o(l))
     }, [
-      f("use", { innerHTML: o(c) }, null, 8, S),
-      u(n.$slots, "default")
+      d("use", { innerHTML: o(c) }, null, 8, g),
+      u(t.$slots, "default")
     ], 6));
   }
 });
