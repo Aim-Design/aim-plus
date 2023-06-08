@@ -13,8 +13,6 @@ const AimUI = {
   // iButton: components.Button,
 };
 
-console.log(components);
-
 const install = function (app: App): void {
   //registe components
   Object.keys(AimUI).forEach((key) => {

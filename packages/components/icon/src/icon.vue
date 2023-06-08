@@ -15,7 +15,6 @@ defineOptions({ name: 'AimIcon' });
 const { n } = createNamespace('icon');
 
 const props = defineProps(IconProps);
-console.log(props);
 
 const icon = computed(() => getIcon(props.name));
 const style = computed<CSSProperties>(() => {
