@@ -2,30 +2,35 @@
   <div class="demo-icon">
     <div class="demo-icon-item">
       <ul class="demo-icon-list">
-        <!-- <li v-for="item in list" :key="item.name" @click="handleClick(item.name)">
+        <li
+          v-for="item in list"
+          :key="item.name"
+          @click="handleClick(item.name)"
+        >
           <span class="demo-svg-icon">
-            <VanIcon :name="item.name" :size="20" />
+            <AimIcon :name="item.name" :size="20" />
             <span class="icon-name">{{ item.title }}</span>
           </span>
-        </li> -->
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-// import { svgs, VanIcon, VanMessage } from '@vangle/components'
+import { svgs, AimIcon } from 'aim-plus';
 
-// const list = Object.keys(svgs).map(key => {
-//   const name = key.replace('./svg/', '').replace('.svg', '')
-//   return {
-//     name,
-//     title: name
-//   }
-// })
+const list = Object.keys(svgs).map((key) => {
+  const name = key.replace('./font/', '').replace('.svg', '');
+  return {
+    name,
+    title: name
+  };
+});
+
 const handleClick = (name: any) => {
   var aux = document.createElement('input');
-  aux.setAttribute('value', `<van-icon name="${name}" />`);
+  aux.setAttribute('value', `<aim-icon name="${name}" />`);
   document.body.appendChild(aux);
   aux.select();
   document.execCommand('copy');

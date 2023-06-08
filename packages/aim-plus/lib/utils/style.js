@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const i=require("./common.js");function n(r,e="px"){if(!r)return"";if(i.isString(r))return`${r}`.indexOf(e)===-1?`${r}${e}`:r;if(i.isNumber(r))return`${r}${e}`}exports.addUnit=n;

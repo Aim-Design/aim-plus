@@ -1,32 +1,17 @@
-// export const ButtonProps = {
-//   color
-//   size
-//   type="skip"
+// import.meta.glob批量引入文件
+export const svgs = import.meta.glob('./font/*.svg', {
+  eager: true,
+  as: 'raw'
+});
 
-//   type: {
-//     type: String as PropType<
-//       'default' | 'primary' | 'info' | 'success' | 'warning' | 'danger'
-//     >,
-//     default: 'default',
-//     validator: typeValidator
-//   },
-//   size: {
-//     type: String as PropType<'small' | 'middle' | 'large'>,
-//     validator: sizeValidator
-//   },
-//   plain: Boolean,
-//   autofocus: Boolean,
-//   round: Boolean,
-//   circle: Boolean,
-//   text: Boolean,
-//   icon: String,
-//   color: String,
-//   disabled: Boolean,
-//   textColor: {
-//     type: String
-//   },
-//   ripple: {
-//     type: Boolean,
-//     default: true
-//   }
-// };
+export const IconProps = {
+  name: String,
+  color: String,
+  loading: Boolean,
+  size: [String, Number]
+};
+
+export const getIcon = (name?: string) => {
+  if (!name) return '';
+  return svgs[`./font/${name}.svg`];
+};

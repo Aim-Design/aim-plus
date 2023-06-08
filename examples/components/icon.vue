@@ -1,5 +1,5 @@
 <template>
   <div>
-    <aim-icon />
+    <aim-icon name="airplane" />
   </div>
 </template>

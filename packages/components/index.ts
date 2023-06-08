@@ -1,4 +1,6 @@
 export * from './components';
+export { svgs } from './icon/src/icon';
+
 import * as components from './components';
 import { isValidKey } from '../utils';
 

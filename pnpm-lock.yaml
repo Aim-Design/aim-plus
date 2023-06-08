@@ -15,6 +15,7 @@ importers:
       '@typescript-eslint/parser': ^5.59.0
       '@vitejs/plugin-vue': ^4.1.0
       '@vitejs/plugin-vue-jsx': ^3.0.0
+      aim-plus: workspace:^1.0.2
       dayjs: ^1.11.7
       escape-html: ^1.0.3
       eslint: ^8.39.0
@@ -48,6 +49,7 @@ importers:
       vue: ^3.2.37
     dependencies:
       '@floating-ui/dom': 1.2.7
+      aim-plus: link:packages/aim-plus
       dayjs: 1.11.7
       escape-html: 1.0.3
     devDependencies:

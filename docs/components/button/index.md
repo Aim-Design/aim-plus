@@ -6,7 +6,7 @@ title: Button 按钮
 
 ```shell
 import { createApp } from 'vue';
-import { AimButton } from 'vangle';
+import { AimButton } from 'aim-plus';
 
 const app = createApp();
 app.use(AimButton);

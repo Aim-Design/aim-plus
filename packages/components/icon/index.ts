@@ -1,4 +1,5 @@
 import _Icon from './src/icon.vue';
+
 import type { App } from 'vue';
 
 _Icon.install = (app: App): void => {

@@ -44,22 +44,13 @@ export default defineConfig({
             }
           ]
         }
-        // {
-        //   text: '进阶',
-        //   items: [
-        //     {
-        //       text: 'xx',
-        //       link: '/xx'
-        //     }
-        //   ]
-        // }
       ],
       '/components': [
         {
           text: '常用组件',
           items: [
-            { text: 'Button 按钮', link: '/components/button/index.md' }
-            // { text: '下拉选择组件', link: '/components/TSelect/base.md' }
+            { text: 'Button 按钮', link: '/components/button/index.md' },
+            { text: 'Icon 图标', link: '/components/icon/index.md' }
           ]
         }
         // {
