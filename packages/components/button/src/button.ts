@@ -16,10 +16,17 @@ function sizeValidator(size: string): boolean {
 }
 
 export const ButtonProps = {
-  type: String as PropType<
-    'default' | 'primary' | 'info' | 'success' | 'warning' | 'danger'
-  >,
-  size: String as PropType<'mini' | 'small' | 'large'>,
+  type: {
+    type: String as PropType<
+      'default' | 'primary' | 'info' | 'success' | 'warning' | 'danger'
+    >,
+    default: 'default',
+    validator: typeValidator
+  },
+  size: {
+    type: String as PropType<'small' | 'middle' | 'large'>,
+    validator: sizeValidator
+  },
   plain: Boolean,
   autofocus: Boolean,
   round: Boolean,

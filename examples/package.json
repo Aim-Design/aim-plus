@@ -15,6 +15,7 @@
     "vite": "^4.3.0"
   },
   "dependencies": {
-    "aim-plus": "workspace:^1.0.2"
+    "aim-plus": "workspace:^1.0.2",
+    "vue-router": "^4.2.2"
   }
 }

@@ -45,7 +45,10 @@ const style = computed(() =>
 );
 
 const { n } = createNamespace('button');
-console.log('🚀 ~ file: button.vue:48 ~ n:', n('default'));
+console.log(n(`--${buttonProps.size}`));
+
+// console.log('🚀 ~ file: button.vue:48 ~ n:', n('default')); //aim-button__default
+// console.log('🚀 ~ file: button.vue:48 ~ n:', n('--default')); //aim-button--default
 </script>
 
 <style lang="less"></style>

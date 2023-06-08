@@ -1,20 +1,20 @@
-import { defineComponent as n, computed as a, openBlock as d, createElementBlock as u, normalizeClass as r, unref as t, normalizeStyle as c, createElementVNode as m, renderSlot as p } from "vue";
+import { defineComponent as l, computed as a, openBlock as d, createElementBlock as c, normalizeClass as s, unref as t, normalizeStyle as m, createElementVNode as p, renderSlot as u } from "vue";
 import "./styles/button.css";
 import { createNamespace as b } from "../../../utils/components.mjs";
 import { ButtonProps as f } from "./button2.mjs";
-const y = ["disabled"], z = n({ name: "AimButton" }), g = /* @__PURE__ */ n({
+const y = ["disabled"], z = l({ name: "AimButton" }), k = /* @__PURE__ */ l({
   ...z,
   props: f,
-  setup(s) {
-    const l = s, i = a(
-      () => l.color ? {
-        "--aim-button-bg-color": l.color,
+  setup(n) {
+    const r = n, i = a(
+      () => r.color ? {
+        "--aim-button-bg-color": r.color,
         "--aim-button-text-color": "var(--aim-color-white)",
-        "--aim-button-border-color": l.color
+        "--aim-button-border-color": r.color
       } : {}
     ), { n: e } = b("button");
-    return console.log("\u{1F680} ~ file: button.vue:48 ~ n:", e("default")), (o, B) => (d(), u("button", {
-      class: r([
+    return console.log(e(`--${r.size}`)), (o, B) => (d(), c("button", {
+      class: s([
         t(e)(),
         o.type && t(e)(`--${o.type}`),
         o.size && t(e)(`--${o.size}`),
@@ -24,20 +24,20 @@ const y = ["disabled"], z = n({ name: "AimButton" }), g = /* @__PURE__ */ n({
         o.disabled && "is-disabled",
         o.text && "is-text"
       ]),
-      style: c({
+      style: m({
         color: o.textColor,
         ...t(i)
       }),
       disabled: o.disabled
     }, [
-      m("div", {
-        class: r([t(e)("content")])
+      p("div", {
+        class: s([t(e)("content")])
       }, [
-        p(o.$slots, "default")
+        u(o.$slots, "default")
       ], 2)
     ], 14, y));
   }
 });
 export {
-  g as default
+  k as default
 };

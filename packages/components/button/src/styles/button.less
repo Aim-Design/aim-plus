@@ -32,7 +32,7 @@
 
       &.is-plain {
         // --aim-button-bg-color: var(--aim-color-white);
-        --aim-button-bg-color: ~'var(--aim-color-@{key}-9)';
+        // --aim-button-bg-color: ~ `` ;
         --aim-button-text-color: @value;
         --aim-button-border-color: @value;
       }
@@ -41,11 +41,11 @@
         color: @value;
       }
 
-      &:hover:not(.is-disabled) {
+      &:hover:not(.is-disabled,.is-plain,.is-text) {
         // background-color: @hoverColors[];  
         background-color: ~'var(--btn-@{key}-hover-bg)';
       }
-      &:active:not(.is-disabled) {
+      &:active:not(.is-disabled,.is-text) {
         &::before {
           box-shadow: 0px 0px 0px 4px @value;
           background-color: var(--aim-button-bg-color);

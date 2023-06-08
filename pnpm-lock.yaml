@@ -117,8 +117,10 @@ importers:
       '@vitejs/plugin-vue': ^4.1.0
       aim-plus: workspace:^1.0.2
       vite: ^4.3.0
+      vue-router: ^4.2.2
     dependencies:
       aim-plus: link:../packages/aim-plus
+      vue-router: 4.2.2
     devDependencies:
       '@vitejs/plugin-vue': 4.2.1_vite@4.3.3
       vite: 4.3.3
@@ -1342,7 +1344,6 @@ packages:
 
   /@vue/devtools-api/6.5.0:
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
-    dev: true
 
   /@vue/reactivity-transform/3.2.47:
     resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==}
@@ -5448,6 +5449,14 @@ packages:
     dependencies:
       vue: 3.2.47
     dev: true
+
+  /vue-router/4.2.2:
+    resolution: {integrity: sha512-cChBPPmAflgBGmy3tBsjeoe3f3VOSG6naKyY5pjtrqLGbNEXdzCigFUHgBvp9e3ysAtFtEx7OLqcSDh/1Cq2TQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.5.0
+    dev: false
 
   /vue/3.2.47:
     resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==}

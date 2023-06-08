@@ -1,6 +1,26 @@
-const o = {
-  type: String,
-  size: String,
+function e(o) {
+  return [
+    "default",
+    "primary",
+    "info",
+    "success",
+    "warning",
+    "danger"
+  ].includes(o);
+}
+function t(o) {
+  return ["normal", "mini", "small", "large"].includes(o);
+}
+const n = {
+  type: {
+    type: String,
+    default: "default",
+    validator: e
+  },
+  size: {
+    type: String,
+    validator: t
+  },
   plain: Boolean,
   autofocus: Boolean,
   round: Boolean,
@@ -18,5 +38,5 @@ const o = {
   }
 };
 export {
-  o as ButtonProps
+  n as ButtonProps
 };

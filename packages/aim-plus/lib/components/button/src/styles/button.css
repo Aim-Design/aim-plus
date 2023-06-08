@@ -94,17 +94,16 @@ a {
   --aim-button-border-color: #1f2937;
 }
 .aim-button.aim-button--default.is-plain {
-  --aim-button-bg-color: var(--aim-color-default-9);
   --aim-button-text-color: #1f2937;
   --aim-button-border-color: #1f2937;
 }
 .aim-button.aim-button--default.is-text {
   color: #1f2937;
 }
-.aim-button.aim-button--default:hover:not(.is-disabled) {
+.aim-button.aim-button--default:hover:not(.is-disabled,.is-plain,.is-text) {
   background-color: var(--btn-default-hover-bg);
 }
-.aim-button.aim-button--default:active:not(.is-disabled)::before {
+.aim-button.aim-button--default:active:not(.is-disabled,.is-text)::before {
   box-shadow: 0px 0px 0px 4px #1f2937;
   background-color: var(--aim-button-bg-color);
   opacity: 0.25;
@@ -115,17 +114,16 @@ a {
   --aim-button-border-color: #3b82f6;
 }
 .aim-button.aim-button--primary.is-plain {
-  --aim-button-bg-color: var(--aim-color-primary-9);
   --aim-button-text-color: #3b82f6;
   --aim-button-border-color: #3b82f6;
 }
 .aim-button.aim-button--primary.is-text {
   color: #3b82f6;
 }
-.aim-button.aim-button--primary:hover:not(.is-disabled) {
+.aim-button.aim-button--primary:hover:not(.is-disabled,.is-plain,.is-text) {
   background-color: var(--btn-primary-hover-bg);
 }
-.aim-button.aim-button--primary:active:not(.is-disabled)::before {
+.aim-button.aim-button--primary:active:not(.is-disabled,.is-text)::before {
   box-shadow: 0px 0px 0px 4px #3b82f6;
   background-color: var(--aim-button-bg-color);
   opacity: 0.25;
@@ -136,17 +134,16 @@ a {
   --aim-button-border-color: #6b7280;
 }
 .aim-button.aim-button--info.is-plain {
-  --aim-button-bg-color: var(--aim-color-info-9);
   --aim-button-text-color: #6b7280;
   --aim-button-border-color: #6b7280;
 }
 .aim-button.aim-button--info.is-text {
   color: #6b7280;
 }
-.aim-button.aim-button--info:hover:not(.is-disabled) {
+.aim-button.aim-button--info:hover:not(.is-disabled,.is-plain,.is-text) {
   background-color: var(--btn-info-hover-bg);
 }
-.aim-button.aim-button--info:active:not(.is-disabled)::before {
+.aim-button.aim-button--info:active:not(.is-disabled,.is-text)::before {
   box-shadow: 0px 0px 0px 4px #6b7280;
   background-color: var(--aim-button-bg-color);
   opacity: 0.25;
@@ -157,17 +154,16 @@ a {
   --aim-button-border-color: #14b8a6;
 }
 .aim-button.aim-button--success.is-plain {
-  --aim-button-bg-color: var(--aim-color-success-9);
   --aim-button-text-color: #14b8a6;
   --aim-button-border-color: #14b8a6;
 }
 .aim-button.aim-button--success.is-text {
   color: #14b8a6;
 }
-.aim-button.aim-button--success:hover:not(.is-disabled) {
+.aim-button.aim-button--success:hover:not(.is-disabled,.is-plain,.is-text) {
   background-color: var(--btn-success-hover-bg);
 }
-.aim-button.aim-button--success:active:not(.is-disabled)::before {
+.aim-button.aim-button--success:active:not(.is-disabled,.is-text)::before {
   box-shadow: 0px 0px 0px 4px #14b8a6;
   background-color: var(--aim-button-bg-color);
   opacity: 0.25;
@@ -178,17 +174,16 @@ a {
   --aim-button-border-color: #eab308;
 }
 .aim-button.aim-button--warning.is-plain {
-  --aim-button-bg-color: var(--aim-color-warning-9);
   --aim-button-text-color: #eab308;
   --aim-button-border-color: #eab308;
 }
 .aim-button.aim-button--warning.is-text {
   color: #eab308;
 }
-.aim-button.aim-button--warning:hover:not(.is-disabled) {
+.aim-button.aim-button--warning:hover:not(.is-disabled,.is-plain,.is-text) {
   background-color: var(--btn-warning-hover-bg);
 }
-.aim-button.aim-button--warning:active:not(.is-disabled)::before {
+.aim-button.aim-button--warning:active:not(.is-disabled,.is-text)::before {
   box-shadow: 0px 0px 0px 4px #eab308;
   background-color: var(--aim-button-bg-color);
   opacity: 0.25;
@@ -199,17 +194,16 @@ a {
   --aim-button-border-color: #ef4444;
 }
 .aim-button.aim-button--danger.is-plain {
-  --aim-button-bg-color: var(--aim-color-danger-9);
   --aim-button-text-color: #ef4444;
   --aim-button-border-color: #ef4444;
 }
 .aim-button.aim-button--danger.is-text {
   color: #ef4444;
 }
-.aim-button.aim-button--danger:hover:not(.is-disabled) {
+.aim-button.aim-button--danger:hover:not(.is-disabled,.is-plain,.is-text) {
   background-color: var(--btn-danger-hover-bg);
 }
-.aim-button.aim-button--danger:active:not(.is-disabled)::before {
+.aim-button.aim-button--danger:active:not(.is-disabled,.is-text)::before {
   box-shadow: 0px 0px 0px 4px #ef4444;
   background-color: var(--aim-button-bg-color);
   opacity: 0.25;
