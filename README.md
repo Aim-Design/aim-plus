@@ -91,5 +91,6 @@ createApp(App).use(AimButton).mount('#app');
 
 ## 贡献者
 
-<!-- readme: collaborators,contributors -start -->
-<!-- readme: collaborators,contributors -end -->
+<a href="https://github.com/Aim-Design/aim-plus/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Aim-Design/aim-plus" />
+</a>

@@ -33,11 +33,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
           branch: gh-pages # 部署后提交到那个分支
           folder: docs/.vitepress/dist # 这里填打包好的目录名称
-  contrib-readme-en-job:
-    runs-on: ubuntu-latest
-    name: A job to automate contrib in readme
-    steps:
-      - name: Contribute List
-        uses: akhilmhdh/contributors-readme-action@v2.3.4
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
