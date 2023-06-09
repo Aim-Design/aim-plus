@@ -1,0 +1,111 @@
+/**
+
+声明变量
+@width: 10px;
+
+
+在属性值中使用变量
+#header {
+    width:@width;
+}
+
+a {
+    color:blue;
+    &:hover {        //等同于 a:hover
+        color:green;
+    }
+
+    & + & {  // a + a
+        color:white;
+    }
+
+    &-children {  // a-children
+        color:black;
+    }
+}
+
+
+*/
+/* Type=Light, State=Invalid, Size=Large, Shape=Rounded */
+.aim-input {
+  --el-input-height: 32px;
+  --aim-input-padding: 4px 16px;
+  --aim-input-font-size-middle: var(--aim-font-size-middle);
+  --aim-input-radius-middle: var(--aim-radius-middle);
+  --aim-input-disabled-bg: #f5f7fa;
+  --aim-input-disabled-text: #a8abb2;
+  --aim-input-disabled-border: #e4e7ed;
+  display: inline-flex;
+  width: 180px;
+  line-height: var(--el-input-height);
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: relative;
+}
+.aim-input__inner {
+  height: inherit;
+  line-height: inherit;
+  color: var(--aim-input-text-color, var(--aim-text-color-regular));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid var(--aim-input-disabled-border);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  outline: none;
+  padding: 0 30px 0 20px;
+  height: var(--aim-input-size);
+  line-height: var(--aim-input-size);
+  font-size: var(--aim-input-font-size-middle);
+  border-radius: var(--aim-input-radius-middle);
+}
+.aim-input__inner::-moz-placeholder {
+  color: var(--aim-input-disabled-text);
+}
+.aim-input__inner::placeholder {
+  color: var(--aim-input-disabled-text);
+}
+.aim-input__inner:hover:not(.is-disabled) {
+  border-color: var(--aim-border-color);
+}
+.aim-input__inner:focus:not(.is-disabled) {
+  border-color: var(--aim-color-primary);
+  box-shadow: 0px 0px 0px 4px var(--aim-color-primary-8);
+}
+.aim-input__inner.is-disabled {
+  background-color: var(--aim-input-disabled-bg);
+  border-color: var(--aim-input-disabled-border);
+  color: var(--aim-input-disabled-text);
+  cursor: not-allowed;
+}
+.aim-input__inner.is-disabled::-moz-placeholder {
+  color: var(--aim-input-disabled-text);
+}
+.aim-input__inner.is-disabled::placeholder {
+  color: var(--aim-input-disabled-text);
+}
+.aim-input__suffix,
+.aim-input__prefix {
+  position: absolute;
+  right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--aim-input-disabled-text);
+  opacity: 0.7;
+}
+.aim-input__prefix {
+  padding-left: 0;
+  padding-right: 11px;
+}
+.aim-input__suffix:hover {
+  opacity: 1;
+}
