@@ -1,14 +1,13 @@
 <template>
   <div>
     <aim-input v-model="value" show-password />
-    {{ value }}
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { ref } from 'vue';
 
-const value = ref<number>(0);
+const value = ref<number>(520);
 </script>
 
 <style scoped></style>

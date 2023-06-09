@@ -75,9 +75,8 @@ const input = ref();
 const passwordView = ref(true); //密码是否可见
 
 Promise.resolve().then(() => {
-  if (!props.showPassword) {
-    input.value.type = 'password';
-  }
+  if (!props.showPassword) return;
+  input.value.type = 'password';
 });
 
 // 点击眼睛

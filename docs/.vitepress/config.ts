@@ -56,6 +56,8 @@ export default defineConfig({
         {
           text: '表单组件',
           items: [
+            { text: 'Input 输入框', link: '/components/input/index.md' }
+
             // {
             //   text: '条件查询组件',
             //   link: '/components/TQueryCondition/base.md'

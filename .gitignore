@@ -4,7 +4,7 @@ node_modules
 cache
 .history/
 .pnpm-debug.log
-docs/.vitepress/dist/
-# packages/aim-plus
-# esm
-# lib
+docs/.vitepress/dist/**
+packages/aim-plus/esm
+packages/aim-plus/lib
+

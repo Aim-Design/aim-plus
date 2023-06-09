@@ -37,7 +37,7 @@ a {
   --aim-line-height-small: 18px;
   --aim-line-height-middle: 20px;
   --aim-line-height-large: 22px;
-  --aim-border-color: #ebedf0;
+  --aim-border-color: #d1d5db;
   --aim-border-width: 1px;
   --aim-border-style: solid;
   --aim-border: var(--aim-border-width) solid var(--aim-border-color);
