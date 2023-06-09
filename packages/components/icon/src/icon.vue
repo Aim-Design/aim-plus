@@ -6,14 +6,14 @@
 </template>
 
 <script lang="ts" setup>
+defineOptions({ name: 'AimIcon' });
+
 import './styles/icon.less';
 import { computed, CSSProperties } from 'vue';
 import { createNamespace, isUndefined, addUnit } from '../../../utils';
 import { IconProps, getIcon } from './icon';
-defineOptions({ name: 'AimIcon' });
 
 const { n } = createNamespace('icon');
-
 const props = defineProps(IconProps);
 
 const icon = computed(() => getIcon(props.name));

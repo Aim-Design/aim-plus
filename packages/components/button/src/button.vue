@@ -24,13 +24,13 @@
 </template>
 
 <script lang="ts" setup>
+defineOptions({ name: 'AimButton' });
+
 import './styles/button.less';
 
 import { computed } from 'vue';
 import { createNamespace } from '../../../utils';
 import { ButtonProps } from './button';
-
-defineOptions({ name: 'AimButton' });
 
 const buttonProps = defineProps(ButtonProps);
 

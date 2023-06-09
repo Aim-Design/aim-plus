@@ -4,6 +4,7 @@ import router from './router';
 import AimPlus from '../packages/components/index';
 // import AimPlus from 'aim-plus';
 // console.log('🚀 ~ file: main.ts:5 ~ AimPlus:', AimPlus);
+console.log(AimPlus);
 
 const app = createApp(App);
 

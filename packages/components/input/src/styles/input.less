@@ -1,0 +1,122 @@
+@import '../../../styles/var.less';
+
+/* Type=Light, State=Invalid, Size=Large, Shape=Rounded */
+
+.aim-input {
+  --el-input-height: 32px;
+
+  // --aim-input-size: @inputSizes[middle];
+  // --aim-input-size-large: @inputSizes[large];
+  // --aim-input-size-small: @inputSizes[small];
+  --aim-input-padding: @paddingSizes[base] @paddingSizes[middle];
+  // disabledColors
+  --aim-input-font-size-middle: var(--aim-font-size-middle);
+  --aim-input-radius-middle: var(--aim-radius-middle);
+  // 禁用颜色
+  --aim-input-disabled-bg: @disabledColors[bg];
+  --aim-input-disabled-text: @disabledColors[text];
+  --aim-input-disabled-border: @disabledColors[border];
+
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+  line-height: var(--el-input-height);
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: relative;
+
+  &__inner {
+    width: 100%;
+    height: inherit;
+    line-height: inherit;
+    color: var(--aim-input-text-color, var(--aim-text-color-regular));
+    // cursor: inherit;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid var(--aim-input-disabled-border);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    outline: none;
+    padding: 0 30px 0 20px;
+    height: var(--aim-input-size);
+    line-height: var(--aim-input-size);
+    font-size: var(--aim-input-font-size-middle);
+    border-radius: var(--aim-input-radius-middle);
+
+    &::placeholder {
+      color: var(--aim-input-disabled-text);
+    }
+    &:hover:not(.is-disabled) {
+      border-color: var(--aim-border-color);
+    }
+    &:focus:not(.is-disabled) {
+      border-color: var(--aim-color-primary);
+      box-shadow: 0px 0px 0px 4px var(--aim-color-primary-8);
+    }
+    // .input-validation();
+    // .input-sizes();
+    &.is-disabled {
+      background-color: var(--aim-input-disabled-bg);
+      border-color: var(--aim-input-disabled-border);
+      color: var(--aim-input-disabled-text);
+      cursor: not-allowed;
+      &::placeholder {
+        color: var(--aim-input-disabled-text);
+      }
+    }
+  }
+
+  &__suffix,
+  &__prefix {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    // color: tint(var(--aim-input-disabled-text), 90%);
+    color: var(--aim-input-disabled-text);
+    opacity: 0.7;
+  }
+
+  &__prefix {
+    padding-left: 0;
+    padding-right: 11px;
+  }
+  &__suffix {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.input-validation() {
+  // 校验 type 失败danger  成功 success
+  each(@colors, {
+    &.aim-input--@{key} {
+      border-color: ~'var(--aim-color-@{key})';
+      box-shadow: 0px 0px 0px 4px ~'var(--aim-color-@{key}-8)';
+    }
+  });
+}
+
+.input-sizes() {
+  each(@fontSizes, {
+    &.aim-input--@{key} {
+      --aim-input-size: ~'var(--aim-input-size-@{key})';
+      --aim-input-padding: calc(var(--aim-input-size) - 20px) calc(var(--aim-input-size) - 12px);
+      height: var(--aim-input-size);
+      line-height: var(--aim-input-size);
+      font-size: ~'var(--aim-font-size-@{key})';
+      border-radius: ~'var(--aim-radius-@{key})';
+    }
+  });
+}

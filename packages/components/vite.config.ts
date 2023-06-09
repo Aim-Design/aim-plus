@@ -1,6 +1,12 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
+
+/**
+ *  "test": "vitest",进行单元测试
+    "coverage": "vitest run --coverage" 查看单元测试覆盖情况
+ */
 
 // @ts-ignore
 import DefineOptions from 'unplugin-vue-define-options/vite';
@@ -72,5 +78,8 @@ export default defineConfig({
         }
       }
     }
-  ]
+  ],
+  test: {
+    environment: 'happy-dom'
+  }
 });

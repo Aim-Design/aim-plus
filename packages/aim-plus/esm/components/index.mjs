@@ -1,21 +1,24 @@
-import * as n from './components.mjs';
-import { svgs as p } from './icon/src/icon.mjs';
-import { isValidKey as r } from '../utils/types.mjs';
-import { AimButton as x } from './button/index.mjs';
-import { AimIcon as u } from './icon/index.mjs';
+import * as m from "./components.mjs";
+import { svgs as p } from "./icon/src/icon.mjs";
+import { isValidKey as s } from "../utils/types.mjs";
+import { AimButton as x } from "./button/index.mjs";
+import { AimIcon as u } from "./icon/index.mjs";
 const o = {
-  ...n
+  ...m
+}, i = function(n) {
+  Object.keys(o).forEach((t) => {
+    if (s(t, o)) {
+      const r = o[t].name;
+      n.component(r, o[t]);
+    }
+  });
+}, e = {
+  install: i,
+  ...m
 };
-const c = function (m) {
-    Object.keys(o).forEach((t) => {
-      if (r(t, o)) {
-        const s = o[t].name;
-        m.component(s, o[t]);
-      }
-    });
-  },
-  i = {
-    install: c,
-    ...n
-  };
-export { x as AimButton, u as AimIcon, i as default, p as svgs };
+export {
+  x as AimButton,
+  u as AimIcon,
+  e as default,
+  p as svgs
+};

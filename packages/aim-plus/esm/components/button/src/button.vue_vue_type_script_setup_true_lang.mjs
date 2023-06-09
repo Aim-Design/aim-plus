@@ -1,8 +1,8 @@
-import { defineComponent as l, computed as a, openBlock as d, createElementBlock as c, normalizeClass as s, unref as t, normalizeStyle as m, createElementVNode as p, renderSlot as u } from "vue";
+import { defineComponent as l, computed as a, openBlock as d, createElementBlock as m, normalizeClass as s, unref as e, normalizeStyle as c, createElementVNode as p, renderSlot as u } from "vue";
 import "./styles/button.css";
 import { createNamespace as b } from "../../../utils/components.mjs";
 import { ButtonProps as f } from "./button2.mjs";
-const y = ["disabled"], z = l({ name: "AimButton" }), k = /* @__PURE__ */ l({
+const y = ["disabled"], z = l({ name: "AimButton" }), v = /* @__PURE__ */ l({
   ...z,
   props: f,
   setup(n) {
@@ -12,26 +12,26 @@ const y = ["disabled"], z = l({ name: "AimButton" }), k = /* @__PURE__ */ l({
         "--aim-button-text-color": "var(--aim-color-white)",
         "--aim-button-border-color": r.color
       } : {}
-    ), { n: e } = b("button");
-    return console.log(e(`--${r.size}`)), (o, B) => (d(), c("button", {
+    ), { n: t } = b("button");
+    return (o, B) => (d(), m("button", {
       class: s([
-        t(e)(),
-        o.type && t(e)(`--${o.type}`),
-        o.size && t(e)(`--${o.size}`),
+        e(t)(),
+        o.type && e(t)(`--${o.type}`),
+        o.size && e(t)(`--${o.size}`),
         o.plain && "is-plain",
         o.round && "is-round",
         o.circle && "is-circle",
         o.disabled && "is-disabled",
         o.text && "is-text"
       ]),
-      style: m({
+      style: c({
         color: o.textColor,
-        ...t(i)
+        ...e(i)
       }),
       disabled: o.disabled
     }, [
       p("div", {
-        class: s([t(e)("content")])
+        class: s([e(t)("content")])
       }, [
         u(o.$slots, "default")
       ], 2)
@@ -39,5 +39,5 @@ const y = ["disabled"], z = l({ name: "AimButton" }), k = /* @__PURE__ */ l({
   }
 });
 export {
-  k as default
+  v as default
 };
