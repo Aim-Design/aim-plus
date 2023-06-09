@@ -74,10 +74,14 @@ function handleMouseLeave() {
 const input = ref();
 const passwordView = ref(true); //密码是否可见
 
-Promise.resolve().then(() => {
-  if (!props.showPassword) return;
-  input.value.type = 'password';
-});
+Promise.resolve()
+  .then(() => {
+    if (!props.showPassword) return;
+    input.value.type = 'password';
+  })
+  .catch((e) => {
+    console.log(e);
+  });
 
 // 点击眼睛
 const handleViewPassword = () => {
