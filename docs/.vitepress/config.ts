@@ -6,7 +6,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   title: 'AimPlus',
-  description: '一个Vue3组件库',
+  description: '一个Vue3组件库11',
   lang: 'cn-ZH',
   base: isProd ? '/aim-plus/' : '/',
   lastUpdated: true,
@@ -50,7 +50,8 @@ export default defineConfig({
           text: '基础组件',
           items: [
             { text: 'Button 按钮', link: '/components/button/index.md' },
-            { text: 'Icon 图标', link: '/components/icon/index.md' }
+            { text: 'Icon 图标', link: '/components/icon/index.md' },
+            { text: 'Link 链接', link: '/components/link/index.md' }
           ]
         },
         {

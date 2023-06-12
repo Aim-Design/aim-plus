@@ -4,23 +4,25 @@ import { isValidKey as i } from "../utils/types.mjs";
 import { AimButton as A } from "./button/index.mjs";
 import { AimIcon as u } from "./icon/index.mjs";
 import { AimInput as d } from "./input/index.mjs";
+import { AimLink as g } from "./link/index.mjs";
 const o = {
   ...m
-}, s = function(n) {
+}, e = function(n) {
   Object.keys(o).forEach((t) => {
     if (i(t, o)) {
       const r = o[t].name;
       n.component(r, o[t]);
     }
   });
-}, c = {
-  install: s,
+}, f = {
+  install: e,
   ...m
 };
 export {
   A as AimButton,
   u as AimIcon,
   d as AimInput,
-  c as default,
+  g as AimLink,
+  f as default,
   a as svgs
 };

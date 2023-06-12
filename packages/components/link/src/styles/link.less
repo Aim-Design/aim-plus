@@ -1,0 +1,74 @@
+@import '../../../styles/var.less';
+
+/* Type=Light, State=Invalid, Size=Large, Shape=Rounded */
+// 类型颜色
+// @colors: {
+//   default: #1f2937;
+//   primary: #3b82f6;
+//   info: #6b7280;
+//   success: #14b8a6;
+//   warning: #eab308;
+//   danger: #ef4444;
+// };
+
+.aim-link {
+  --aim-link-text-color: @colors[default];
+  --aim-link-border-color: @colors[default];
+  --aim-link-disabled-opacity: var(--aim-disabled-opacity);
+  --aim-link-hover-opacity: 0.8; //hover的透明度
+
+  .flex-center();
+  flex-direction: row;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--aim-link-text-color) !important;
+  &:hover:not(.is-disabled) {
+    opacity: var(--aim-link-hover-opacity);
+    &.is-underline:after {
+      //伪元素实现第二层
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 0;
+      bottom: 0;
+      border-top: 2px solid var(--aim-link-text-color);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      opacity: var(--aim-link-hover-opacity);
+    }
+  }
+
+  &.is-disabled {
+    cursor: not-allowed;
+    opacity: var(--aim-link-disabled-opacity);
+    &::after {
+      display: none;
+    }
+  }
+  .link-variant();
+}
+
+.link-variant() {
+  each(@colors, {
+    &.aim-link--@{key} {
+      --aim-link-text-color: @value;
+      --aim-link-border-color: @value;
+    }
+  });
+}
+
+.flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}

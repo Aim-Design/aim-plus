@@ -1,8 +1,8 @@
 ---
-title: Icon 图标
+title: Input 输入框
 ---
 
-# Icon 图标
+# Input 输入框
 
 通过鼠标或键盘输入字符。
 

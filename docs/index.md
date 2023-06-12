@@ -8,7 +8,7 @@ lastUpdated: true
 hero:
   name: AimPlus
   text: Vue3常用组件
-  tagline: 一个Vue3组件库
+  tagline: 仅仅为了学习使用
   image:
     src: /images/logo-rect.png
     alt: aim-plus

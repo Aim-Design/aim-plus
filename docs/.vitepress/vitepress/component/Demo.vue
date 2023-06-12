@@ -99,9 +99,17 @@ function handleCopy() {
   padding: 0.8rem;
   margin: 0.5px;
 
+  a {
+    color: var(--aim-link-text-color) !important;
+    text-decoration: none !important;
+  }
+
   > .aim-icon {
     margin-right: 16px;
     font-size: 26px;
+  }
+  > .aim-link {
+    margin-right: 8px;
   }
 }
 

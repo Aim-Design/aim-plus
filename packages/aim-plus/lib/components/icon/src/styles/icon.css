@@ -19,6 +19,11 @@
   height: 1em;
   width: 1em;
 }
+.aim-icon use {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @keyframes rotating {
   0% {
     transform: rotateZ(0deg);

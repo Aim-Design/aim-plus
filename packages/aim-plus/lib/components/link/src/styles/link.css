@@ -1,0 +1,101 @@
+/**
+
+声明变量
+@width: 10px;
+
+
+在属性值中使用变量
+#header {
+    width:@width;
+}
+
+a {
+    color:blue;
+    &:hover {        //等同于 a:hover
+        color:green;
+    }
+
+    & + & {  // a + a
+        color:white;
+    }
+
+    &-children {  // a-children
+        color:black;
+    }
+}
+
+
+*/
+/* Type=Light, State=Invalid, Size=Large, Shape=Rounded */
+.aim-link {
+  --aim-link-text-color: #1f2937;
+  --aim-link-border-color: #1f2937;
+  --aim-link-disabled-opacity: var(--aim-disabled-opacity);
+  --aim-link-hover-opacity: 0.8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  flex-direction: row;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--aim-link-text-color) !important;
+}
+.aim-link:hover:not(.is-disabled) {
+  opacity: var(--aim-link-hover-opacity);
+}
+.aim-link:hover:not(.is-disabled).is-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  bottom: 0;
+  border-top: 2px solid var(--aim-link-text-color);
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+  opacity: var(--aim-link-hover-opacity);
+}
+.aim-link.is-disabled {
+  cursor: not-allowed;
+  opacity: var(--aim-link-disabled-opacity);
+}
+.aim-link.is-disabled::after {
+  display: none;
+}
+.aim-link.aim-link--default {
+  --aim-link-text-color: #1f2937;
+  --aim-link-border-color: #1f2937;
+}
+.aim-link.aim-link--primary {
+  --aim-link-text-color: #3b82f6;
+  --aim-link-border-color: #3b82f6;
+}
+.aim-link.aim-link--info {
+  --aim-link-text-color: #6b7280;
+  --aim-link-border-color: #6b7280;
+}
+.aim-link.aim-link--success {
+  --aim-link-text-color: #14b8a6;
+  --aim-link-border-color: #14b8a6;
+}
+.aim-link.aim-link--warning {
+  --aim-link-text-color: #eab308;
+  --aim-link-border-color: #eab308;
+}
+.aim-link.aim-link--danger {
+  --aim-link-text-color: #ef4444;
+  --aim-link-border-color: #ef4444;
+}
+.flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
