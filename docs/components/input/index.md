@@ -37,3 +37,11 @@ input/password
 input/disabled
 
 :::
+
+## 属性
+
+| Attribute     | Description | Type    | Accepted Values | Default |
+| ------------- | ----------- | ------- | --------------- | ------- |
+| clearable     | 是否可清空  | boolean | —               | false   |
+| show-password | 密码输入框  | boolean | —               | false   |
+| disabled      | 禁用输入框  | boolean | —               |

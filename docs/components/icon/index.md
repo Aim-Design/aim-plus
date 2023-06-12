@@ -38,6 +38,15 @@ icon/size
 
 :::
 
+## 属性
+
+| Attribute | Description    | Type            | Accepted Values | Default |
+| --------- | -------------- | --------------- | --------------- | ------- |
+| name      | 图标类型       | string          | —               | —       |
+| color     | 图标颜色       | string          | —               | —       |
+| rotate    | 是否顺时针旋转 | boolean         | —               | false   |
+| size      | 图标大小       | string / number | —               | —       |
+
 ## 图标集合
 
 鼠标左键点击可复制。
