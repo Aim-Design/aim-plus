@@ -8,9 +8,7 @@ export declare const LinkProps: {
     icon: StringConstructor;
     href: StringConstructor;
     disabled: BooleanConstructor;
-    underline: {
-        type: BooleanConstructor;
-        default: boolean;
-    };
+    border: BooleanConstructor;
+    underline: BooleanConstructor;
 };
 export declare type LinkProps = ExtractPropTypes<typeof LinkProps>;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <aim-link>大家好<aim-icon name="house-door" /> </aim-link>
+    <aim-link border>大家好<aim-icon name="house-door" /> </aim-link>
   </div>
 </template>
 

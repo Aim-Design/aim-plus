@@ -29,7 +29,7 @@ a {
 /* Type=Light, State=Invalid, Size=Large, Shape=Rounded */
 .aim-link {
   --aim-link-text-color: #1f2937;
-  --aim-link-border-color: #1f2937;
+  --aim-link-border-color: #6b7280;
   --aim-link-disabled-opacity: var(--aim-disabled-opacity);
   --aim-link-hover-opacity: 0.8;
   display: inline-flex;
@@ -41,15 +41,16 @@ a {
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  padding: 0;
+  padding: var(--aim-padding-base);
   font-size: 14px;
   font-weight: 500;
-  color: var(--aim-link-text-color) !important;
+  color: var(--aim-link-text-color);
+  border: 2px solid transparent;
 }
 .aim-link:hover:not(.is-disabled) {
   opacity: var(--aim-link-hover-opacity);
 }
-.aim-link:hover:not(.is-disabled).is-underline:after {
+.aim-link:hover:not(.is-disabled).is-underline::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -61,6 +62,10 @@ a {
   transform-origin: 0 0;
   transform: scaleY(0.5);
   opacity: var(--aim-link-hover-opacity);
+}
+.aim-link:hover:not(.is-disabled).is-border {
+  border-radius: var(--aim-radius-large);
+  border-color: var(--aim-link-border-color);
 }
 .aim-link.is-disabled {
   cursor: not-allowed;

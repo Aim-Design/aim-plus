@@ -16,9 +16,17 @@ link/basic
 
 ## 下划线
 
-:::demo 使用 `underline` 决定是否启用下划线，默认启用。
+:::demo 使用 `underline` 决定鼠标 hover 上去是否显示下划线，默认禁用。
 
 link/underline
+
+:::
+
+## 边框
+
+:::demo 使用 `border` 决定鼠标 hover 上去是否显示边框，默认禁用，一般情况下，边框和下划线只能存在一个。
+
+link/border
 
 :::
 
@@ -30,14 +38,23 @@ link/disabled
 
 :::
 
+## 自定义内容
+
+:::demo 使用 `default` 插槽自定义内容。
+
+link/slot
+
+:::
+
 ## 属性
 
-| Attribute | Description  | Type    | Accepted Values                                       | Default |
-| --------- | ------------ | ------- | ----------------------------------------------------- | ------- |
-| href      | 跳转地址     | string  | —                                                     | —       |
-| type      | 链接类型     | string  | default / primary / success / warning / danger / info | default |
-| underline | 否启用下划线 | boolean | —                                                     | true    |
-| disabled  | 禁用链接     | boolean | —                                                     | false   |
+| Attribute | Description    | Type    | Accepted Values                                       | Default |
+| --------- | -------------- | ------- | ----------------------------------------------------- | ------- |
+| href      | 跳转地址       | string  | —                                                     | —       |
+| type      | 链接类型       | string  | default / primary / success / warning / danger / info | default |
+| underline | 是否启用下划线 | boolean | —                                                     | false   |
+| border    | 是否启用边框   | boolean | —                                                     | false   |
+| disabled  | 禁用链接       | boolean | —                                                     | false   |
 
 ## 插槽
 

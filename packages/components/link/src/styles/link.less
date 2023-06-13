@@ -13,7 +13,7 @@
 
 .aim-link {
   --aim-link-text-color: @colors[default];
-  --aim-link-border-color: @colors[default];
+  --aim-link-border-color: @colors[info];
   --aim-link-disabled-opacity: var(--aim-disabled-opacity);
   --aim-link-hover-opacity: 0.8; //hover的透明度
 
@@ -23,30 +23,37 @@
   text-decoration: none;
   outline: none;
   cursor: pointer;
-  padding: 0;
+  padding: var(--aim-padding-base);
   font-size: 14px;
   font-weight: 500;
-  color: var(--aim-link-text-color) !important;
+  color: var(--aim-link-text-color);
+  border: 2px solid transparent; //!!!!!!!!!
+
   &:hover:not(.is-disabled) {
     opacity: var(--aim-link-hover-opacity);
-    &.is-underline:after {
-      //伪元素实现第二层
-      content: '';
-      position: absolute;
-      width: 100%;
-      left: 0;
-      right: 0;
-      height: 0;
-      bottom: 0;
-      border-top: 2px solid var(--aim-link-text-color);
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-      -webkit-transform: scaleY(0.5);
-      transform: scaleY(0.5);
-      opacity: var(--aim-link-hover-opacity);
+    &.is-underline {
+      &::before {
+        //伪元素实现第二层
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 0;
+        bottom: 0;
+        border-top: 2px solid var(--aim-link-text-color);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+        opacity: var(--aim-link-hover-opacity);
+      }
+    }
+    &.is-border {
+      border-radius: var(--aim-radius-large);
+      border-color: var(--aim-link-border-color);
     }
   }
-
   &.is-disabled {
     cursor: not-allowed;
     opacity: var(--aim-link-disabled-opacity);
@@ -54,6 +61,7 @@
       display: none;
     }
   }
+
   .link-variant();
 }
 

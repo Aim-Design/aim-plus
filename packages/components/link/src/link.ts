@@ -12,10 +12,8 @@ export const LinkProps = {
   icon: String,
   href: String,
   disabled: Boolean,
-  underline: {
-    type: Boolean,
-    default: true
-  }
+  border: Boolean,
+  underline: Boolean
 };
 
 export type LinkProps = ExtractPropTypes<typeof LinkProps>;

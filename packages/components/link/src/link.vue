@@ -4,7 +4,8 @@
       n(),
       type && n(`--${type}`),
       disabled && 'is-disabled',
-      underline && 'is-underline'
+      underline && 'is-underline',
+      border && 'is-border'
     ]"
     :href="disabled ? undefined : href"
     v-bind="attrs"

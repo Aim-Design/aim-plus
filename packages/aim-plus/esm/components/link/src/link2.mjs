@@ -8,10 +8,8 @@ const e = ["primary", "success", "info", "warning", "danger"], r = {
   icon: String,
   href: String,
   disabled: Boolean,
-  underline: {
-    type: Boolean,
-    default: !0
-  }
+  border: Boolean,
+  underline: Boolean
 };
 export {
   r as LinkProps,
